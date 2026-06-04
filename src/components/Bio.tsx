@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
-import artistPhoto from '../assets/ChipaChipArt.png'
+import artistPhoto from '../assets/ChChArt.png'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
@@ -23,7 +23,13 @@ const extendedBio = {
     },
     {
       title: 'ДИСКОГРАФИЯ',
-      content: 'Сольные альбомы:\n• «Рофл» (2018)\n• «В городе нет солнца» (2019)\n• «Это рэп всё» (2020)\n• «Реле» (2021)\n• «Трудно дышать» (2022)\n\nПопулярные треки:\n• «Рофл»\n• «В городе нет солнца»\n• «Это рэп всё»\n• «Реле»\n• «Трудно дышать»\n• «Запах сирени»\n• «Грузовая компания» (совместно с Ямыч Восточный Округ)'
+      type: 'buttons',
+      buttons: [
+        { label: 'Альбомы', href: 'https://vk.com/artist/chipachip/albums' },
+        { label: 'Синглы и EP', href: 'https://vk.com/artist/chipachip/singles' },
+        { label: 'Популярные треки', href: 'https://vk.com/artist/chipachip/top_audios' },
+        { label: 'Участие в релизах', href: 'https://vk.com/artist/chipachip/featuring_releases' }
+      ]
     }
   ]
 }
@@ -40,18 +46,21 @@ export default function Bio() {
       document.body.style.overflow = 'hidden'
       return () => {
         window.removeEventListener('scroll', onScroll)
-        document.body.style.overflow = 'unset'
+        document.body.style.overflow = ''
       }
     }
   }, [modalOpen])
 
-  const closeModal = () => setModalOpen(false)
+  const closeModal = () => {
+    setModalOpen(false)
+    document.body.style.overflow = ''
+  }
 
   return (
     <section className="bio-section" id="bio">
       <div className="container">
         <span className="section-label">Биография</span>
-        <div className="bio-frame frame">
+        <div className="bio-frame">
           <span className="corner corner-tl" />
           <span className="corner corner-tr" />
           <span className="corner corner-bl" />
@@ -71,7 +80,6 @@ export default function Bio() {
       {modalOpen && (
         <div className="bio-modal-overlay" onClick={closeModal}>
           <div className="bio-modal" ref={modalRef} onClick={(e) => e.stopPropagation()}>
-            {/* ВОТ ОНИ — УГОЛКИ МОДАЛЬНОГО ОКНА */}
             <span className="corner corner-tl" />
             <span className="corner corner-tr" />
             <span className="corner corner-bl" />
@@ -93,7 +101,27 @@ export default function Bio() {
               {extendedBio.sections.map((section, index) => (
                 <div key={index} className="bio-modal-section">
                   <h3 className="bio-modal-section-title">{section.title}</h3>
-                  <p className="bio-modal-section-text">{section.content}</p>
+                  
+                  {section.type === 'buttons' && section.buttons ? (
+                    <div className="bio-discography-buttons">
+                      {section.buttons.map((btn, i) => (
+                        <a
+                          key={i}
+                          href={btn.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bio-discography-btn"
+                        >
+                          <span>{btn.label}</span>
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                          </svg>
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="bio-modal-section-text">{section.content}</p>
+                  )}
                 </div>
               ))}
             </div>
