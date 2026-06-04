@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
-import artistPhoto from '../assets/ChipaChipArt.png'
+import artistPhoto from '../assets/ChChArt.png'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
@@ -60,21 +60,20 @@ export default function Bio() {
     <section className="bio-section" id="bio">
       <div className="container">
         <span className="section-label">Биография</span>
-        
-        <div className="bio-card" onClick={() => setModalOpen(true)}>
+        <div className="bio-frame">
           <span className="corner corner-tl" />
           <span className="corner corner-tr" />
           <span className="corner corner-bl" />
           <span className="corner corner-br" />
-          
-          <div className="bio-card-content">
-            <h3 className="bio-card-title">ChipaChip</h3>
-            <p className="bio-card-subtitle">Биография исполнителя</p>
+          <div className="bio-inner">
+            <div className="bio-quote-mark">“</div>
+            <p className="bio-text">
+              ChipaChip — исполнитель с богатой историей и солидным бэкграундом. Отличная продуктивность и участие во многих проектах: от телешоу до онлайн баттлов принесли ему заслуженный успех и широкую узнаваемость.
+            </p>
+            <button className="bio-more-btn" onClick={() => setModalOpen(true)}>
+              Узнать больше о исполнителе
+            </button>
           </div>
-          
-          <svg className="bio-card-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
         </div>
       </div>
 
