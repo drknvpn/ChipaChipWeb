@@ -4,6 +4,8 @@
   position: relative;
   padding: 48px 52px;
   overflow: visible;
+  border: 1px solid var(--border);
+  background: rgba(30, 30, 30, 0.6);
 }
 
 .bio-inner { position: relative; z-index: 1; }
