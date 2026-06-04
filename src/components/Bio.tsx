@@ -46,15 +46,12 @@ export default function Bio() {
       document.body.style.overflow = 'hidden'
       return () => {
         window.removeEventListener('scroll', onScroll)
-        document.body.style.overflow = ''
+        document.body.style.overflow = 'unset'
       }
     }
   }, [modalOpen])
 
-  const closeModal = () => {
-    setModalOpen(false)
-    document.body.style.overflow = ''
-  }
+  const closeModal = () => setModalOpen(false)
 
   return (
     <section className="bio-section" id="bio">
