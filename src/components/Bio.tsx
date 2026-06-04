@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
-import artistPhoto from '../assets/ChipaChipArt.png'
+import artistPhoto from '../assets/ChChArt.png'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
