@@ -7,10 +7,6 @@
   border: 1px solid var(--border);
 }
 
-.bio-frame.frame {
-  border: 1px solid var(--border);
-}
-
 .bio-inner { position: relative; z-index: 1; }
 
 .bio-quote-mark { 
@@ -54,7 +50,7 @@
   transform: translateY(-2px);
 }
 
-/* Corner styles — ОБЩИЕ для всех элементов */
+/* Corner styles */
 .corner {
   position: absolute;
   width: 12px;
