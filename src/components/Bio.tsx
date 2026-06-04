@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
-import artistPhoto from '../assets/ChChArt.png'
+import artistPhoto from '../assets/ChipaChipArt.png'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
@@ -57,7 +57,7 @@ export default function Bio() {
           <span className="corner corner-bl" />
           <span className="corner corner-br" />
           <div className="bio-inner">
-            <div className="bio-quote-mark">“</div>
+            <div className="bio-quote-mark">"</div>
             <p className="bio-text">
               ChipaChip — исполнитель с богатой историей и солидным бэкграундом. Отличная продуктивность и участие во многих проектах: от телешоу до онлайн баттлов принесли ему заслуженный успех и широкую узнаваемость.
             </p>
@@ -71,7 +71,6 @@ export default function Bio() {
       {modalOpen && (
         <div className="bio-modal-overlay" onClick={closeModal}>
           <div className="bio-modal" ref={modalRef} onClick={(e) => e.stopPropagation()}>
-            {/* ВОТ ОНИ — УГОЛКИ МОДАЛЬНОГО ОКНА */}
             <span className="corner corner-tl" />
             <span className="corner corner-tr" />
             <span className="corner corner-bl" />
