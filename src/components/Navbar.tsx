@@ -12,11 +12,11 @@ const navLinks = [
 ]
 
 const socials = [
-  { name: 'VK', href: 'https://vk.com/chipachip', icon: <FaVk /> },
-  { name: 'Instagram', href: 'https://instagram.com/chipachip', icon: <FaInstagram /> },
-  { name: 'TikTok', href: 'https://tiktok.com/@chipachip', icon: <FaTiktok /> },
-  { name: 'Telegram', href: 'https://t.me/chipachip', icon: <FaTelegram /> },
-  { name: 'YouTube', href: 'https://youtube.com/@chipachip', icon: <FaYoutube /> },
+  { name: 'VK', href: 'https://vk.com/chipachipp', icon: <FaVk /> },
+  { name: 'Instagram', href: 'https://www.instagram.com/chipachip', icon: <FaInstagram /> },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@chipachipofficial', icon: <FaTiktok /> },
+  { name: 'Telegram', href: 'https://t.me/chipachipoff', icon: <FaTelegram /> },
+  { name: 'YouTube', href: 'https://www.youtube.com/channel/UCxze56ONvewO-B-VnLkvb7g?view_as=subscriber', icon: <FaYoutube /> },
 ]
 
 export default function Navbar() {
