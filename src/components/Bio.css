@@ -243,3 +243,74 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+/* Discography buttons */
+.bio-discography-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.bio-discography-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: transparent;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-discography-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(212, 168, 71, 0.08);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.bio-discography-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 168, 71, 0.15);
+}
+
+.bio-discography-btn:hover::before {
+  transform: translateX(0);
+}
+
+.bio-discography-btn svg {
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.bio-discography-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 600px) {
+  .bio-discography-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .bio-discography-btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+}
