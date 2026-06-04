@@ -1,0 +1,9 @@
+.faq-section { padding: 120px 0; background: var(--bg-primary); }
+.faq-frame { overflow: visible; }
+.faq-list { position: relative; z-index: 1; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; display: flex; align-items: center; gap: 20px; padding: 24px 32px; text-align: left; transition: background 0.2s; color: var(--text-primary); }
+.faq-q:hover { background: rgba(255,255,255,0.02); }
+.faq-num { font-family: 'Bebas Neue'; font-size: 22px; letter-spacing: 0.06em; color: var(--accent); opacity: 0.6; flex-shrink: 0; width: 32px; }
+.faq-a { padding: 0 32px 28px 84px; font-size: 15px; line-height: 1.75; color: var(--text-primary); }
+@media (max-width: 768px) { .faq-q { padding: 20px 20px; } .faq-a { padding: 0 20px 24px 66px; } }
