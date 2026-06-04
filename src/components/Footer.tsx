@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="footer-divider" />
         <div className="footer-bottom">
-          <p>© 2026 ChipaChip 💛</p>
+          <p>© 2026 ChipaChip</p>
           <div className="footer-credit">
             Создано{' '}
             <a href="https://vk.com/corona92" target="_blank" rel="noopener noreferrer" className="credit-link">
