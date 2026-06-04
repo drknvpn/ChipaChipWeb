@@ -46,18 +46,21 @@ export default function Bio() {
       document.body.style.overflow = 'hidden'
       return () => {
         window.removeEventListener('scroll', onScroll)
-        document.body.style.overflow = 'unset'
+        document.body.style.overflow = ''
       }
     }
   }, [modalOpen])
 
-  const closeModal = () => setModalOpen(false)
+  const closeModal = () => {
+    setModalOpen(false)
+    document.body.style.overflow = ''
+  }
 
   return (
     <section className="bio-section" id="bio">
       <div className="container">
         <span className="section-label">Биография</span>
-        <div className="bio-frame frame">
+        <div className="bio-frame">
           <span className="corner corner-tl" />
           <span className="corner corner-tr" />
           <span className="corner corner-bl" />
@@ -99,9 +102,9 @@ export default function Bio() {
                 <div key={index} className="bio-modal-section">
                   <h3 className="bio-modal-section-title">{section.title}</h3>
                   
-                  {section.type === 'buttons' ? (
+                  {section.type === 'buttons' && section.buttons ? (
                     <div className="bio-discography-buttons">
-                      {section.buttons?.map((btn, i) => (
+                      {section.buttons.map((btn, i) => (
                         <a
                           key={i}
                           href={btn.href}
