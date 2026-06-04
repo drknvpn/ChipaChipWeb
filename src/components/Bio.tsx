@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
-import artistPhoto from '../assets/ChipaChipArt.png'
+import artistPhoto from '../assets/ChChArt.png'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
@@ -63,7 +63,7 @@ export default function Bio() {
           <span className="corner corner-bl" />
           <span className="corner corner-br" />
           <div className="bio-inner">
-            <div className="bio-quote-mark">"</div>
+            <div className="bio-quote-mark">“</div>
             <p className="bio-text">
               ChipaChip — исполнитель с богатой историей и солидным бэкграундом. Отличная продуктивность и участие во многих проектах: от телешоу до онлайн баттлов принесли ему заслуженный успех и широкую узнаваемость.
             </p>
@@ -110,7 +110,7 @@ export default function Bio() {
                           className="bio-discography-btn"
                         >
                           <span>{btn.label}</span>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M7 17L17 7M17 7H7M17 7V17" />
                           </svg>
                         </a>
