@@ -63,7 +63,7 @@ export default function Bio() {
           <span className="corner corner-bl" />
           <span className="corner corner-br" />
           <div className="bio-inner">
-            <div className="bio-quote-mark">"</div>
+            <div className="bio-quote-mark">#</div>
             <p className="bio-text">
               <b>ChipaChip</b> <kbd>— исполнитель с богатой историей и солидным бэкграундом. Отличная продуктивность и участие во многих проектах: от телешоу до онлайн баттлов принесли ему заслуженный успех и широкую узнаваемость.</kbd>
             </p>
