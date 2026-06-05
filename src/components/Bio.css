@@ -187,6 +187,7 @@
   line-height: 1.8;
   color: var(--text-primary);
   font-weight: 300;
+  font-style: normal;
   white-space: pre-line;
   letter-spacing: 0.01em;
 }
