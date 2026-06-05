@@ -56,7 +56,7 @@ export default function Bio() {
   return (
     <section className="bio-section" id="bio">
       <div className="container">
-        <span className="section-label">Биография</span><br>
+        <span className="section-label">Биография</span>
         <div className="bio-frame frame">
           <span className="corner corner-tl" />
           <span className="corner corner-tr" />
