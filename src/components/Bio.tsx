@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Bio.css'
 import artistPhoto from '../assets/ChChArt.png'
-import ReactMarkdown from 'react-markdown'
 
 const extendedBio = {
   title: 'От воронежского студента до культового рэпера',
