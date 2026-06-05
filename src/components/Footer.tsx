@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer-logo">ChipaChip</div>
           <div className="footer-socials">
             <a href="https://vk.com/chipachipp" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-            <a href="https://www.instagram.com/chipachip" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/chipachip" target="_blank" rel="noopener noreferrer">Instagram*</a>
             <a href="https://www.tiktok.com/@chipachipofficial" target="_blank" rel="noopener noreferrer">TikTok</a>
             <a href="https://t.me/chipachipoff" target="_blank" rel="noopener noreferrer">Telegram</a>
             <a href="https://www.youtube.com/channel/UCxze56ONvewO-B-VnLkvb7g?view_as=subscriber" target="_blank" rel="noopener noreferrer">YouTube</a>
