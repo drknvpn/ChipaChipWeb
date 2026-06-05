@@ -7,7 +7,9 @@ export default function Hero() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
+      }
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -15,10 +17,7 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
-      {/* Brick wall background pattern */}
       <div className="brick-wall" />
-      
-      {/* Subtle film grain - без мерцания */}
       <div className="film-grain" />
 
       <div className="hero-parallax" ref={bgRef}>
