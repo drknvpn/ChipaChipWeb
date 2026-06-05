@@ -18,12 +18,14 @@ export default function Footer() {
         <div className="footer-bottom">
           <p>© 2026 ChipaChip</p>
           <div className="footer-credit">
-  <span className="credit-text">
-    Designed & Built by{' '}
-  </span>
-  <a href="https://vk.com/Corona92" target="_blank" rel="noopener noreferrer" className="credit-link-gradient">
+  <span className="credit-heart">❤️</span>
+  <span>Сделано с</span>
+  <a href="https://vk.com/Corona92" target="_blank" rel="noopener noreferrer" className="credit-link">
+    <span className="credit-sparkle">✨</span>
     Corona92
+    <span className="credit-sparkle">✨</span>
   </a>
+  <span>для ChipaChip</span>
 </div>
           <a href="https://t.me/Tvei79" target="_blank" rel="noopener noreferrer" className="footer-booking">Booking</a>
         </div>
