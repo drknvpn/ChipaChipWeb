@@ -17,13 +17,17 @@ export default function Footer() {
         <div className="footer-divider" />
         <div className="footer-bottom">
           <p>© 2026 ChipaChip</p>
-         <div className="footer-credit-neon">
-  <div className="neon-sign">
-    <span className="neon-label">Made by</span>
-    <a href="https://vk.com/Corona92" target="_blank" rel="noopener noreferrer" className="neon-text">
-      Corona92
+         <div className="footer-credit-wave">
+  <div className="wave-container">
+    <svg className="wave-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path className="wave-path" d="M0,30 Q150,60 300,30 T600,30 T900,30 T1200,30 L1200,60 L0,60 Z" />
+    </svg>
+  </div>
+  <div className="wave-content">
+    <span>DESIGNED BY</span>
+    <a href="https://qwen.ai" target="_blank" rel="noopener noreferrer" className="wave-link">
+      QWEN STUDIO
     </a>
-    <div className="neon-glow"></div>
   </div>
 </div>
           <a href="https://t.me/Tvei79" target="_blank" rel="noopener noreferrer" className="footer-booking">Booking</a>
