@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
-          <div className="footer-logo">CHIPACHIP</div>
+          <div className="footer-logo">ChipaChip</div>
           <div className="footer-socials">
             <a href="https://vk.com/chipachipp" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
             <a href="https://www.instagram.com/chipachip" target="_blank" rel="noopener noreferrer">Instagram</a>
