@@ -6,14 +6,18 @@ export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Фикс для iOS Safari — принудительный пересчёт viewport
+    // Фикс для iOS Safari — пересчёт viewport
     const fixViewport = () => {
       const vh = window.innerHeight * 0.01
+      const vw = window.innerWidth * 0.01
       document.documentElement.style.setProperty('--vh', `${vh}px`)
+      document.documentElement.style.setProperty('--vw', `${vw}px`)
+      
+      // Принудительный reflow
+      void document.body.offsetHeight
       window.dispatchEvent(new Event('resize'))
     }
 
-    // Вызываем при загрузке и при изменении ориентации
     fixViewport()
     window.addEventListener('load', fixViewport)
     window.addEventListener('orientationchange', fixViewport)
@@ -46,7 +50,7 @@ export default function Hero() {
         </div>
       </div>
 
-      
+     
     </section>
   )
 }
