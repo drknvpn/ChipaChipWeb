@@ -6,42 +6,33 @@ export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Фикс для iOS Safari — пересчёт viewport
+    // Фикс для iOS Safari
     const fixViewport = () => {
       const vh = window.innerHeight * 0.01
-      const vw = window.innerWidth * 0.01
       document.documentElement.style.setProperty('--vh', `${vh}px`)
-      document.documentElement.style.setProperty('--vw', `${vw}px`)
-      
-      // Принудительный reflow
-      void document.body.offsetHeight
-      window.dispatchEvent(new Event('resize'))
     }
 
     fixViewport()
-    window.addEventListener('load', fixViewport)
-    window.addEventListener('orientationchange', fixViewport)
     window.addEventListener('resize', fixViewport)
+    window.addEventListener('orientationchange', fixViewport)
 
     const onScroll = () => {
-      if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
+      }
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     
     return () => {
-      window.removeEventListener('load', fixViewport)
-      window.removeEventListener('orientationchange', fixViewport)
       window.removeEventListener('resize', fixViewport)
+      window.removeEventListener('orientationchange', fixViewport)
       window.removeEventListener('scroll', onScroll)
     }
   }, [])
 
   return (
     <section className="hero-section">
-      {/* Brick wall background pattern */}
       <div className="brick-wall" />
-      
-      {/* Subtle film grain - без мерцания */}
       <div className="film-grain" />
 
       <div className="hero-parallax" ref={bgRef}>
@@ -50,7 +41,8 @@ export default function Hero() {
         </div>
       </div>
 
-     
+      
+      </div>
     </section>
   )
 }
