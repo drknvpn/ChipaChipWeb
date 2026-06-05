@@ -26,8 +26,8 @@
 .concert-row:hover { background: rgba(255,255,255,0.025); }
 .concert-date { font-family: 'Rubik'; font-weight: 700; font-style: normal; font-size: 20px; letter-spacing: 0.1em; color: var(--accent); }
 .concert-info { display: flex; flex-direction: column; gap: 3px; }
-.concert-city { font-size: 17px; font-weight: 600; color: var(--text-primary); }
-.concert-venue { font-size: 13px; color: var(--text-muted); }
+.concert-city { font-family: 'Rubik'; font-style: normal; font-size: 17px; font-weight: 500; color: var(--text-primary); }
+.concert-venue { font-family: 'Rubik'; font-weight: 300; font-style: normal; font-size: 13px; color: var(--text-muted); }
 .ticket-btn { display: inline-flex; padding: 10px 22px; border: 1px solid rgba(212,168,71,0.4); background: rgba(212,168,71,0.06); color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; border-radius: 2px; transition: background 0.2s; }
 .ticket-btn:hover { background: var(--accent-dim); }
 .sold-badge { font-size: 12px; font-weight: 600; color: var(--text-muted); padding: 10px 22px; border: 1px solid var(--border); border-radius: 2px; }
