@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner container">
-        <a href="#" className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>CHIPACHIP</a>
+        <a href="#" className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>ChipaChip</a>
         
         <nav className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {navLinks.map(l => (
