@@ -24,7 +24,7 @@
 .concert-row { display: grid; grid-template-columns: 100px 1fr auto; align-items: center; gap: 28px; padding: 0 32px; height: 76px; border-bottom: 1px solid var(--border); transition: background 0.2s; }
 .concert-row:last-child { border-bottom: none; }
 .concert-row:hover { background: rgba(255,255,255,0.025); }
-.concert-date { font-family: 'Bebas Neue'; font-size: 20px; letter-spacing: 0.1em; color: var(--accent); }
+.concert-date { font-family: 'Rubik'; font-weight: 700; font-style: normal; font-size: 20px; letter-spacing: 0.1em; color: var(--accent); }
 .concert-info { display: flex; flex-direction: column; gap: 3px; }
 .concert-city { font-size: 17px; font-weight: 600; color: var(--text-primary); }
 .concert-venue { font-size: 13px; color: var(--text-muted); }
