@@ -1,8 +1,10 @@
 .listen-section { padding: 120px 0; background: var(--bg-primary); }
 
 .section-label {
+  font-family: 'Rubik';
+  font-style: normal;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   color: var(--accent);
   text-transform: uppercase;
@@ -11,7 +13,9 @@
 }
 
 .section-heading {
-  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(32px, 5vw, 48px);
   line-height: 1.1;
   letter-spacing: 0.03em;
