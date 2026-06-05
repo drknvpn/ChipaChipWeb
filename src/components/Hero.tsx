@@ -6,11 +6,30 @@ export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // Фикс для iOS Safari — принудительный пересчёт viewport
+    const fixViewport = () => {
+      const vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+      window.dispatchEvent(new Event('resize'))
+    }
+
+    // Вызываем при загрузке и при изменении ориентации
+    fixViewport()
+    window.addEventListener('load', fixViewport)
+    window.addEventListener('orientationchange', fixViewport)
+    window.addEventListener('resize', fixViewport)
+
     const onScroll = () => {
       if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
     }
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    
+    return () => {
+      window.removeEventListener('load', fixViewport)
+      window.removeEventListener('orientationchange', fixViewport)
+      window.removeEventListener('resize', fixViewport)
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
@@ -27,7 +46,10 @@ export default function Hero() {
         </div>
       </div>
 
-      
+      <div className="hero-buttons">
+        <a href="#concerts" className="btn-primary">Концерты</a>
+        <a href="#listen" className="btn-primary">Слушать</a>
+      </div>
     </section>
   )
 }
