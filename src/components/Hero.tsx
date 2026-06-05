@@ -46,10 +46,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-buttons">
-        <a href="#concerts" className="btn-primary">Концерты</a>
-        <a href="#listen" className="btn-primary">Слушать</a>
-      </div>
+      
     </section>
   )
 }
