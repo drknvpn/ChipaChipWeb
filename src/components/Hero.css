@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100); /* Фикс для iOS Safari */
+  min-height: calc(var(--vh, 1vh) * 100);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -56,7 +56,7 @@
   bottom: -8%;
   transform: translateX(-50%);
   height: 85vh;
-  height: calc(var(--vh, 1vh) * 85); /* Фикс для iOS Safari */
+  height: calc(var(--vh, 1vh) * 85);
   max-height: 720px;
   opacity: 1;
   animation: float 6s ease-in-out infinite;
@@ -108,7 +108,7 @@
 @media (max-width: 768px) {
   .hero-silhouette {
     height: 60vh;
-    height: calc(var(--vh, 1vh) * 60); /* Фикс для iOS Safari */
+    height: calc(var(--vh, 1vh) * 60);
     opacity: 1;
   }
   
