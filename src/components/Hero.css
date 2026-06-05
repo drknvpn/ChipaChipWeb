@@ -1,10 +1,10 @@
-.hero-section { 
-  position: relative; 
-  min-height: 100vh; 
-  display: flex; 
-  align-items: center; 
-  overflow: hidden; 
-  background: var(--bg-primary); 
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bg-primary);
 }
 
 /* Brick wall pattern - old school hip-hop aesthetic */
@@ -13,7 +13,7 @@
   inset: 0;
   z-index: 0;
   opacity: 0.15;
-  background-image: 
+  background-image:
     repeating-linear-gradient(
       0deg,
       transparent,
@@ -41,30 +41,30 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-.hero-parallax { 
-  position: absolute; 
-  inset: 0; 
-  will-change: transform; 
-  pointer-events: none; 
+.hero-parallax {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  pointer-events: none;
   z-index: 2;
 }
 
-.hero-silhouette { 
-  position: absolute; 
+.hero-silhouette {
+  position: absolute;
   left: 50%;
-  bottom: -8%; /* Опустили ниже (было 0) */
+  bottom: -8%;
   transform: translateX(-50%);
-  height: 85vh; 
-  max-height: 720px; 
-  opacity: 1; 
-  animation: float 6s ease-in-out infinite; 
+  height: 85vh;
+  max-height: 720px;
+  opacity: 1;
+  animation: float 6s ease-in-out infinite;
 }
 
-.artist-photo { 
-  height: 100%; 
-  width: auto; 
-  object-fit: contain; 
-  filter: drop-shadow(0 0 60px rgba(212,168,71,0.3)); 
+.artist-photo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(212,168,71,0.3));
 }
 
 .hero-buttons {
@@ -79,34 +79,34 @@
   justify-content: center;
 }
 
-.btn-primary { 
-  display: inline-flex; 
-  align-items: center; 
-  padding: 12px 32px; 
-  background: var(--accent); 
-  color: #080808; 
-  font-size: 13px; 
-  font-weight: 700; 
-  letter-spacing: 0.12em; 
-  text-transform: uppercase; 
-  border-radius: 2px; 
-  transition: transform 0.2s, box-shadow 0.2s; 
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 32px;
+  background: var(--accent);
+  color: #080808;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.btn-primary:hover { 
-  transform: translateY(-2px); 
-  box-shadow: 0 8px 30px rgba(212,168,71,0.4); 
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(212,168,71,0.4);
 }
 
-@keyframes float { 
-  0%, 100% { transform: translateX(-50%) translateY(0); } 
-  50% { transform: translateX(-50%) translateY(-14px); } 
+@keyframes float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-14px); }
 }
 
-@media (max-width: 768px) { 
-  .hero-silhouette { 
-    height: 60vh; 
-    opacity: 1; 
+@media (max-width: 768px) {
+  .hero-silhouette {
+    height: 60vh;
+    opacity: 1;
   }
   
   .hero-buttons {
