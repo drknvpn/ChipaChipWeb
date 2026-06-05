@@ -26,7 +26,9 @@ export default function Footer() {
           <a href="https://t.me/Tvei79" target="_blank" rel="noopener noreferrer" className="footer-booking">Booking</a>
         </div>
       </div>
-      «Instagram принадлежит компании Meta, признанной экстремистской организацией. Её деятельность запрещена в России». 
+      <p style={{ fontSize: '10px', color: '#555', opacity: 0.5, marginTop: '20px' }}>
+  «Instagram принадлежит компании Meta, признанной экстремистской организацией. Её деятельность запрещена в России».
+</p> 
     </footer>
   )
 }
