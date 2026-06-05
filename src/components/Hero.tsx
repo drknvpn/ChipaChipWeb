@@ -6,33 +6,19 @@ export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Фикс для iOS Safari
-    const fixViewport = () => {
-      const vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty('--vh', `${vh}px`)
-    }
-
-    fixViewport()
-    window.addEventListener('resize', fixViewport)
-    window.addEventListener('orientationchange', fixViewport)
-
     const onScroll = () => {
-      if (bgRef.current) {
-        bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
-      }
+      if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
     }
     window.addEventListener('scroll', onScroll, { passive: true })
-    
-    return () => {
-      window.removeEventListener('resize', fixViewport)
-      window.removeEventListener('orientationchange', fixViewport)
-      window.removeEventListener('scroll', onScroll)
-    }
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
     <section className="hero-section">
+      {/* Brick wall background pattern */}
       <div className="brick-wall" />
+      
+      {/* Subtle film grain - без мерцания */}
       <div className="film-grain" />
 
       <div className="hero-parallax" ref={bgRef}>
@@ -42,7 +28,6 @@ export default function Hero() {
       </div>
 
       
-      </div>
     </section>
   )
 }
