@@ -1,8 +1,10 @@
 .concerts-section { padding: 120px 0; background: var(--bg-secondary); }
 
 .section-label {
+  font-family: 'Rubik';
+  font-style: normal; 
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   color: var(--accent);
   text-transform: uppercase;
@@ -12,6 +14,8 @@
 
 .section-heading {
   font-family: 'Rubik', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: clamp(38px, 7vw, 36px);
   line-height: 1;
   letter-spacing: 0.03em;
