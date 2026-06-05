@@ -304,11 +304,11 @@
 @media (max-width: 600px) {
   .bio-discography-buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
   
   .bio-discography-btn {
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
     padding: 12px 20px;
     font-size: 12px;
