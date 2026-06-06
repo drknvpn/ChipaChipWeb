@@ -7,6 +7,14 @@ const concerts = [
   { date: '11 АПР', city: 'Новосибирск', venue: 'Opera Concert Club', status: 'sold' },
   { date: '25 АПР', city: 'Казань', venue: 'A2 Green Concert', status: 'soon' },
   { date: '09 МАЯ', city: 'Краснодар', venue: 'Arena Hall', status: 'soon' },
+  { date: '24 АПР', city: 'Архангельск', venue: 'A2 Green Concert', status: 'soon' },
+  { date: '09 МАЯ', city: 'Вологда', venue: 'Arena Hall', status: 'soon' },
+  { date: '25 АПР', city: 'Ярославль', venue: 'A2 Green Concert', status: 'soon' },
+  { date: '09 МАЯ', city: 'Иваново', venue: 'Arena Hall', status: 'soon' },
+  { date: '25 АПР', city: 'Владимир', venue: 'A2 Green Concert', status: 'soon' },
+  { date: '09 МАЯ', city: 'Рязань', venue: 'Arena Hall', status: 'soon' },
+  { date: '25 АПР', city: 'Тула', venue: 'A2 Green Concert', status: 'soon' },
+  { date: '09 МАЯ', city: 'Калуга', venue: 'Arena Hall', status: 'soon' },
 ]
 
 export default function Concerts() {
@@ -38,4 +46,3 @@ export default function Concerts() {
     </section>
   )
 }
-Показано для примера, концерты, туры и т.д укажите свои.
