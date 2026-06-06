@@ -7,7 +7,6 @@
   background: var(--bg-primary);
 }
 
-/* Brick wall pattern - old school hip-hop aesthetic */
 .brick-wall {
   position: absolute;
   inset: 0;
@@ -31,7 +30,6 @@
   background-size: 120px 80px;
 }
 
-/* Subtle film grain - без мерцания */
 .film-grain {
   position: absolute;
   inset: 0;
