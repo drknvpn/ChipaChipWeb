@@ -45,18 +45,16 @@
   will-change: transform;
   pointer-events: none;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-/* Надёжное центрирование через margin: 0 auto вместо left: 50% + transform */
 .hero-silhouette {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8%;
-  margin: 0 auto;
-  width: fit-content;
+  position: relative;
   height: 85vh;
   max-height: 720px;
+  margin-bottom: -8%;
   opacity: 1;
   animation: float 6s ease-in-out infinite;
 }
@@ -71,10 +69,8 @@
 .hero-buttons {
   position: absolute;
   top: 90px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   display: flex;
   gap: 16px;
@@ -101,7 +97,6 @@
   box-shadow: 0 8px 30px rgba(212,168,71,0.4);
 }
 
-/* Анимация без translateX — только translateY */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-14px); }
@@ -109,7 +104,7 @@
 
 @media (max-width: 768px) {
   .hero-silhouette {
-    height: 60vh;
+    height: 55vh;
     opacity: 1;
   }
   
