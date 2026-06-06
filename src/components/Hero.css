@@ -47,19 +47,17 @@
   z-index: 2;
 }
 
-/* Позиционирование — центрирование */
+/* Надёжное центрирование через margin: 0 auto вместо left: 50% + transform */
 .hero-silhouette {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: -8%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  width: fit-content;
   height: 85vh;
   max-height: 720px;
   opacity: 1;
-}
-
-/* Анимация вынесена в отдельный div */
-.hero-silhouette-float {
   animation: float 6s ease-in-out infinite;
 }
 
@@ -73,8 +71,10 @@
 .hero-buttons {
   position: absolute;
   top: 90px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
   z-index: 10;
   display: flex;
   gap: 16px;
@@ -101,7 +101,7 @@
   box-shadow: 0 8px 30px rgba(212,168,71,0.4);
 }
 
-/* Анимация только по Y — не конфликтует с позиционированием */
+/* Анимация без translateX — только translateY */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-14px); }
