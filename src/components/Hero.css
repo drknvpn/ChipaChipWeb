@@ -54,7 +54,6 @@
   position: relative;
   width: fit-content;
   height: 85vh;
-  max-height: 720px;
   margin-bottom: -8%;
   opacity: 1;
   animation: float 6s ease-in-out infinite;
