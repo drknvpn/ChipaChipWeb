@@ -7,9 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (bgRef.current) {
-        bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
-      }
+      if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.45}px)`
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -22,18 +20,16 @@ export default function Hero() {
 
       <div className="hero-parallax" ref={bgRef}>
         <div className="hero-silhouette">
-          <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
+          <div className="hero-silhouette-float">
+            <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
+          </div>
         </div>
       </div>
 
-      
+      <div className="hero-buttons">
+        <a href="#concerts" className="btn-primary">Концерты</a>
+        <a href="#listen" className="btn-primary">Слушать</a>
+      </div>
     </section>
   )
 }
-<div className="hero-parallax" ref={bgRef}>
-  <div className="hero-silhouette">
-    <div className="hero-silhouette-float">
-      <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
-    </div>
-  </div>
-</div>
