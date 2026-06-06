@@ -1,20 +1,20 @@
 import './Concerts.css'
 
 const concerts = [
-  { date: '24.09', city: 'Архангельск', venue: '# тут название площадки', status: 'soon' },
-  { date: '25.09', city: 'Вологда', venue: '# тут название площадки', status: 'soon' },
+  { date: '24.09', city: 'Архангельск', venue: 'Руки ВВерх! Бар', status: 'soon' },
+  { date: '25.09', city: 'Вологда', venue: 'Oliver pub', status: 'soon' },
   { date: '26.09', city: 'Ярославль', venue: 'Руки Вверх! Бар (ex. Горка)', status: 'soon' },
   { date: '27.09', city: 'Иваново', venue: 'Руки Вверх! Бар', status: 'soon' },
-  { date: '29.09', city: 'Владимир', venue: '# тут название площадки', status: 'soon' },
-  { date: '01.10', city: 'Рязань', venue: '# тут название площадки', status: 'soon' },
+  { date: '29.09', city: 'Владимир', venue: 'Творческая лаБАРатория Другой 2.0', status: 'soon' },
+  { date: '01.10', city: 'Рязань', venue: '"Свобода" Event - hall', status: 'soon' },
   { date: '02.10', city: 'Тула', venue: 'Sqer', status: 'soon' },
   { date: '03.10', city: 'Калуга', venue: 'Жара', status: 'soon' },
-  { date: '04.10', city: 'Смоленск', venue: '# тут название площадки', status: 'soon' },
-  { date: '06.11', city: 'Санкт-Петербург', venue: '# тут название площадки', status: 'soon' },
+  { date: '04.10', city: 'Смоленск', venue: 'Бар 1865 | А клуб', status: 'soon' },
+  { date: '06.11', city: 'Санкт-Петербург', venue: 'Клуб «Рассвет»', status: 'soon' },
   { date: '07.11', city: 'Москва', venue: 'Свобода', status: 'soon' },
   { date: '12.11', city: 'Брянск', venue: 'Цензура', status: 'soon' },
-  { date: '13.11', city: 'Орёл', venue: '# тут название площадки', status: 'soon' },
-  { date: '14.11', city: 'Белгород', venue: '# тут название площадки', status: 'soon' },
+  { date: '13.11', city: 'Орёл', venue: 'Клуб «Герц»', status: 'soon' },
+  { date: '14.11', city: 'Белгород', venue: 'Клуб «Часы»', status: 'soon' },
   { date: '15.11', city: 'Курск', venue: 'Черчилль', status: 'soon' },
 ]
 
