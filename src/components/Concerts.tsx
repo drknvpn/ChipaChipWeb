@@ -38,3 +38,4 @@ export default function Concerts() {
     </section>
   )
 }
+Показано для примера, концерты, туры и т.д укажите свои.
