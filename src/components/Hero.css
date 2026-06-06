@@ -45,17 +45,21 @@
   will-change: transform;
   pointer-events: none;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
+/* Позиционирование — как было раньше */
 .hero-silhouette {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
   height: 85vh;
   max-height: 720px;
-  margin-bottom: -8%;
   opacity: 1;
+}
+
+/* Анимация вынесена в отдельный div */
+.hero-silhouette-float {
   animation: float 6s ease-in-out infinite;
 }
 
@@ -97,6 +101,7 @@
   box-shadow: 0 8px 30px rgba(212,168,71,0.4);
 }
 
+/* Анимация только по Y — не конфликтует с позиционированием */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-14px); }
@@ -104,7 +109,7 @@
 
 @media (max-width: 768px) {
   .hero-silhouette {
-    height: 55vh;
+    height: 60vh;
     opacity: 1;
   }
   
