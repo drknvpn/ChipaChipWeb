@@ -30,3 +30,10 @@ export default function Hero() {
     </section>
   )
 }
+<div className="hero-parallax" ref={bgRef}>
+  <div className="hero-silhouette">
+    <div className="hero-silhouette-float">
+      <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
+    </div>
+  </div>
+</div>
