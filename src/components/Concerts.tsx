@@ -1,21 +1,21 @@
 import './Concerts.css'
 
 const concerts = [
-  { date: '24.09', city: 'Архангельск', venue: 'Главclub Green Concert', status: 'soon' },
-  { date: '21 МАР', city: 'Вологда', venue: 'Космонавт', status: 'soon' },
-  { date: '04 АПР', city: 'Ярославль', venue: 'Teleclub', status: 'soon' },
-  { date: '11 АПР', city: 'Иваново', venue: 'Opera Concert Club', status: 'sold' },
-  { date: '25 АПР', city: 'Владимир', venue: 'A2 Green Concert', status: 'soon' },
-  { date: '09 МАЯ', city: 'Рязань', venue: 'Arena Hall', status: 'soon' },
-  { date: '24 АПР', city: 'Тула', venue: 'A2 Green Concert', status: 'soon' },
-  { date: '09 МАЯ', city: 'Калуга', venue: 'Arena Hall', status: 'soon' },
-  { date: '25 АПР', city: 'Смоленск', venue: 'A2 Green Concert', status: 'soon' },
-  { date: '09 МАЯ', city: 'Санкт-Петербург', venue: 'Arena Hall', status: 'soon' },
-  { date: '25 АПР', city: 'Москва', venue: 'A2 Green Concert', status: 'soon' },
-  { date: '09 МАЯ', city: 'Брянск', venue: 'Arena Hall', status: 'soon' },
-  { date: '25 АПР', city: 'Орёл', venue: 'A2 Green Concert', status: 'soon' },
-  { date: '09 МАЯ', city: 'Белгород', venue: 'Arena Hall', status: 'soon' },
-  { date: '09 МАЯ', city: 'Курск', venue: 'Arena Hall', status: 'soon' },
+  { date: '24.09', city: 'Архангельск', venue: '# тут название площадки', status: 'soon' },
+  { date: '25.09', city: 'Вологда', venue: '# тут название площадки', status: 'soon' },
+  { date: '26.09', city: 'Ярославль', venue: '# тут название площадки', status: 'soon' },
+  { date: '27.09', city: 'Иваново', venue: '# тут название площадки', status: 'sold' },
+  { date: '29.09', city: 'Владимир', venue: '# тут название площадки', status: 'soon' },
+  { date: '01.10', city: 'Рязань', venue: '# тут название площадки', status: 'soon' },
+  { date: '02.10', city: 'Тула', venue: '# тут название площадки', status: 'soon' },
+  { date: '03.10', city: 'Калуга', venue: '# тут название площадки', status: 'soon' },
+  { date: '04.10', city: 'Смоленск', venue: '# тут название площадки', status: 'soon' },
+  { date: '06.11', city: 'Санкт-Петербург', venue: '# тут название площадки', status: 'soon' },
+  { date: '07.11', city: 'Москва', venue: '# тут название площадки', status: 'soon' },
+  { date: '12.11', city: 'Брянск', venue: '# тут название площадки', status: 'soon' },
+  { date: '13.11', city: 'Орёл', venue: '# тут название площадки', status: 'soon' },
+  { date: '14.11', city: 'Белгород', venue: '# тут название площадки', status: 'soon' },
+  { date: '15.11', city: 'Курск', venue: '# тут название площадки', status: 'soon' },
 ]
 
 export default function Concerts() {
