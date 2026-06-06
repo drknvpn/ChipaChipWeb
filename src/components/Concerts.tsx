@@ -23,8 +23,8 @@ export default function Concerts() {
     <section className="concerts-section" id="concerts">
       <div className="container">
         <span className="section-label">Концерты</span>
-        <h2 className="section-heading">СОВЕРШЕННОЛЕТНИЙ <span style={{ color: 'var(--accent)' }}>2026</span></h2>
-
+        <h2 className="section-heading">СОВЕРШЕННОЛЕТНИЙ  <span style={{ color: 'var(--accent)' }}>2026</span></h2>
+        
         <div className="concerts-list">
           {concerts.map((c, i) => (
             <div key={i} className={`concert-row ${c.status}`}>
@@ -42,6 +42,22 @@ export default function Concerts() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Блок с другими площадками */}
+        <div className="other-platforms">
+          <span className="section-label">Билеты на других площадках</span>
+          <div className="platforms-buttons">
+            <a href="https://afisha.yandex.ru/artist/chipachip" target="_blank" rel="noopener noreferrer" className="platform-btn">
+              Билеты на Яндекс Афише →
+            </a>
+            <a href="https://www.afisha.ru/search/?query=ChipaChip&searchInAllCities=true" target="_blank" rel="noopener noreferrer" className="platform-btn">
+              Билеты на Афише →
+            </a>
+            <a href="https://kassir.ru/artists/chipachip" target="_blank" rel="noopener noreferrer" className="platform-btn">
+              Билеты на Кассир →
+            </a>
+          </div>
         </div>
       </div>
     </section>
