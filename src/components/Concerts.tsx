@@ -18,6 +18,13 @@ const concerts = [
   { date: '15.11', city: 'Курск', venue: 'Черчилль', status: 'soon' },
 ]
 
+// Функция для генерации ссылки на Ticketscloud
+const getTicketscloudUrl = (date: string) => {
+  // Убираем точки и ведущие нули: "24.09" → "2409", "06.11" → "611"
+  const cleanDate = date.replace('.', '').replace(/^0/, '')
+  return `https://${cleanDate}chipachip.ticketscloud.org`
+}
+
 export default function Concerts() {
   return (
     <section className="concerts-section" id="concerts">
@@ -26,22 +33,28 @@ export default function Concerts() {
         <h2 className="section-heading">СОВЕРШЕННОЛЕТНИЙ  <span style={{ color: 'var(--accent)' }}>2026</span></h2>
         
         <div className="concerts-list">
-          {concerts.map((c, i) => (
-            <div key={i} className={`concert-row ${c.status}`}>
-              <div className="concert-date">{c.date}</div>
-              <div className="concert-info">
-                <span className="concert-city">{c.city}</span>
-                <span className="concert-venue">{c.venue}</span>
+          {concerts.map((c, i) => {
+            const ticketUrl = getTicketscloudUrl(c.date)
+            
+            return (
+              <div key={i} className={`concert-row ${c.status}`}>
+                <div className="concert-date">{c.date}</div>
+                <div className="concert-info">
+                  <span className="concert-city">{c.city}</span>
+                  <span className="concert-venue">{c.venue}</span>
+                </div>
+                <div className="concert-action">
+                  {c.status === 'sold' ? (
+                    <span className="sold-badge">Распродано</span>
+                  ) : (
+                    <a href={ticketUrl} target="_blank" rel="noopener noreferrer" className="ticket-btn">
+                      Билеты →
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="concert-action">
-                {c.status === 'sold' ? (
-                  <span className="sold-badge">Распродано</span>
-                ) : (
-                  <a href="https://afisha.yandex.ru/artist/chipachip" className="ticket-btn">Билеты →</a>
-                )}
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Блок с другими площадками */}
