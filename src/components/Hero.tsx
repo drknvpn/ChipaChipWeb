@@ -15,10 +15,7 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
-      {/* Brick wall background pattern */}
       <div className="brick-wall" />
-      
-      {/* Subtle film grain - без мерцания */}
       <div className="film-grain" />
 
       <div className="hero-parallax" ref={bgRef}>
@@ -27,7 +24,7 @@ export default function Hero() {
         </div>
       </div>
 
-      
+     
     </section>
   )
 }
