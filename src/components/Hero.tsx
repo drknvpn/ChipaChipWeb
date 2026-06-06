@@ -15,21 +15,19 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
+      {/* Brick wall background pattern */}
       <div className="brick-wall" />
+      
+      {/* Subtle film grain - без мерцания */}
       <div className="film-grain" />
 
       <div className="hero-parallax" ref={bgRef}>
         <div className="hero-silhouette">
-          <div className="hero-silhouette-float">
-            <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
-          </div>
+          <img src={artistPhoto} alt="ChipaChip" className="artist-photo" />
         </div>
       </div>
 
-      <div className="hero-buttons">
-        <a href="#concerts" className="btn-primary">Концерты</a>
-        <a href="#listen" className="btn-primary">Слушать</a>
-      </div>
+      
     </section>
   )
 }
