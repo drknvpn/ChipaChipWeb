@@ -22,8 +22,8 @@ export default function Hero() {
 
   // Эффект печатной машинки
   useEffect(() => {
-    const startDelay = 800 // Задержка перед началом печати
-    const typingSpeed = 90 // Скорость печати (мс на букву)
+    const startDelay = 800
+    const typingSpeed = 90
     
     const startTimeout = setTimeout(() => {
       let index = 0
@@ -49,11 +49,23 @@ export default function Hero() {
       <div className="brick-wall" />
       <div className="film-grain" />
 
-      {/* Надпись с эффектом печати */}
+      {/* Надпись с эквалайзером */}
       <div className="hero-tagline-wrapper">
         <h1 className="hero-tagline">
           <span className="tagline-text">{displayedText}</span>
-          <span className={`tagline-cursor ${isTyping ? 'typing' : 'blinking'}`}>|</span>
+          <svg 
+            className={`equalizer ${isTyping ? 'active' : 'fading'}`}
+            width="40" 
+            height="30" 
+            viewBox="0 0 40 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="2" y="15" width="6" height="15" rx="1" className="eq-bar eq-bar-1" />
+            <rect x="11" y="8" width="6" height="22" rx="1" className="eq-bar eq-bar-2" />
+            <rect x="20" y="12" width="6" height="18" rx="1" className="eq-bar eq-bar-3" />
+            <rect x="29" y="5" width="6" height="25" rx="1" className="eq-bar eq-bar-4" />
+          </svg>
         </h1>
       </div>
 
