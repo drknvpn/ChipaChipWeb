@@ -1,3 +1,168 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.brick-wall {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.15;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(212, 168, 71, 0.3) 40px,
+      rgba(212, 168, 71, 0.3) 42px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      rgba(212, 168, 71, 0.2) 60px,
+      rgba(212, 168, 71, 0.2) 62px
+    );
+  background-size: 120px 80px;
+}
+
+.film-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Обёртка для надписи */
+.hero-tagline-wrapper {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Сама надпись */
+.hero-tagline {
+  font-family: 'Rubik';
+  font-weight: 800;
+  font-style: italic;
+  font-size: clamp(36px, 7vw, 96px);
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  text-shadow: 
+    0 0 30px rgba(212, 168, 71, 0.5),
+    0 0 60px rgba(212, 168, 71, 0.3),
+    0 0 90px rgba(212, 168, 71, 0.15);
+  filter: drop-shadow(0 4px 20px rgba(212, 168, 71, 0.4));
+}
+
+/* Текст */
+.tagline-text {
+  display: inline;
+}
+
+/* Курсор */
+.tagline-cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--accent);
+  font-weight: 300;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+/* Курсор во время печати — мигает быстро */
+.tagline-cursor.typing {
+  animation-name: cursor-blink-fast;
+}
+
+/* Курсор после печати — мигает медленно */
+.tagline-cursor.blinking {
+  animation-name: cursor-blink-slow;
+}
+
+@keyframes cursor-blink-fast {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes cursor-blink-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+/* Parallax контейнер */
+.hero-parallax {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-silhouette {
+  position: relative;
+  width: fit-content;
+  height: 85vh;
+  margin-bottom: -8%;
+  opacity: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.artist-photo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(212,168,71,0.3));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-tagline-wrapper {
+    top: 28%;
+  }
+  
+  .hero-tagline {
+    font-size: clamp(24px, 10vw, 48px);
+    letter-spacing: 0.05em;
+  }
+  
+  .hero-silhouette {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-tagline-wrapper {
+    top: 25%;
+  }
+  
+  .hero-tagline {
+    font-size: clamp(20px, 12vw, 36px);
+  }
+}
 /* Эквалайзер */
 .equalizer {
   display: inline-block;
