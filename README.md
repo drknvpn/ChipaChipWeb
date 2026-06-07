@@ -1,7 +1,7 @@
 # ChipaChip Fan Website — Demo Portfolio Project
 
-**Статус:** Демо-портфолио  
-**Лицензия:** Non-commercial demo
+![Project Status](https://img.shields.io/badge/status-demo%20portfolio-blue)
+![License](https://img.shields.io/badge/license-non--commercial%20demo-green)
 
 ## 📋 Описание
 
