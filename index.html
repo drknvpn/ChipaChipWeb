@@ -1,47 +1,53 @@
 <!doctype html>
 <html lang="ru">
   <head>
-  <!-- Шрифты, фавикон, кодировка -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="apple-touch-icon" href="/favicon.ico" />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     
-    <!-- Новые SEO теги -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ChipaChip" />
+    
+    <!-- SEO -->
     <meta name="description" content="ChipaChip — официальный сайт исполнителя. Концерты 2026, музыка, видео, билеты." />
-    <meta name="keywords" content="ChipaChip, ЧипаЧип, концерты, хип-хоп, рэп, Воронеж, билеты 2026" />
+    <meta name="keywords" content="ChipaChip, ЧипаЧип, концерты, хип-хоп, рэп, Воронеж, билеты 2026, Грузовая компания" />
     <meta name="author" content="ChipaChip" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Open Graph для соцсетей -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chipa-chip-web.vercel.app/" />
+    <meta property="og:site_name" content="ChipaChip" />
     <meta property="og:title" content="ChipaChip — Официальный сайт" />
     <meta property="og:description" content="Концерты, музыка, видео. Андеграундный хип-хоп из Воронежа." />
     <meta property="og:image" content="/og-image.jpg" />
     <meta property="og:locale" content="ru_RU" />
     
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://chipa-chip-web.vercel.app/" />
     <meta name="twitter:title" content="ChipaChip — Официальный сайт" />
-    <meta name="twitter:description" content="Концерты, музыка, видео" />
+    <meta name="twitter:description" content="Концерты, музыка, видео. Андеграундный хип-хоп из Воронежа." />
     <meta name="twitter:image" content="/og-image.jpg" />
     
-    <!-- Тема для мобильных -->
-    <meta name="theme-color" content="#080808" />
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
-    <!-- Заголовок сайта -->
     <title>ChipaChip — Официальный сайт | Концерты 2026, билеты, музыка</title>
-    
-    <!-- Ниже строки не трогаем, Vite их сам меняет при сборке -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Всё те же строки не трогаем, Vite сам их обновит при сборке -->
   </body>
 </html>
