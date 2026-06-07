@@ -1,13 +1,13 @@
-# ChipaChip Fan Website — Demo Portfolio Project
+# ДЕМО РЕДИЗАЙНА ДЛЯ ОФИЦИАЛЬНОГО САЙТА ИСПОЛНИТЕЛЯ ChipaChip.
 
-**Статус:** Демо-портфолио  
-**Лицензия:** Non-commercial demo
+![Стаус проекта](https://img.shields.io/badge/status-demo%20portfolio-blue)
+![Лицензия](https://img.shields.io/badge/license-non--commercial%20demo-green)
 
 ## 📋 Описание
 
-Данный проект представляет собой демонстрационную версию официального сайта исполнителя **ChipaChip**. Сайт разработан в рамках портфолио веб-разработчика с целью демонстрации навыков frontend-разработки и современного подхода к веб-дизайну.
+Данный проект представляет собой демонстрационную версию НЕофициального сайта исполнителя **ChipaChip**. Сайт разработан в рамках портфолио веб-разработчика с целью демонстрации навыков frontend-разработки и современного подхода к веб-дизайну.
 
-**Live Demo:** [chipa-chip-web.vercel.app](https://chipa-chip-web.vercel.app)
+**ДЕМО:** [ПРОЕКТ НА VERCEL](https://chipa-chip-web.vercel.app)
 
 ---
 
