@@ -63,7 +63,7 @@ export default function Concerts() {
                         rel="noopener noreferrer" 
                         className="ticket-btn"
                       >
-                        Билеты 🡽
+                        Билеты 🡥
                       </a>
                     </>
                   )}
