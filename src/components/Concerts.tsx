@@ -54,7 +54,7 @@ export default function Concerts() {
                           rel="noopener noreferrer" 
                           className="meet-btn"
                         >
-                          Встреча →
+                          Встреча 🡥
                         </a>
                       )}
                       <a 
@@ -78,13 +78,13 @@ export default function Concerts() {
           <span className="section-label">Билеты на других площадках</span>
           <div className="platforms-buttons">
             <a href="https://afisha.yandex.ru/artist/chipachip" target="_blank" rel="noopener noreferrer" className="platform-btn">
-              Билеты на Яндекс Афише →
+              Билеты на Яндекс Афише 🡥
             </a>
             <a href="https://www.afisha.ru/search/?query=ChipaChip&searchInAllCities=true" target="_blank" rel="noopener noreferrer" className="platform-btn">
-              Билеты на Афише →
+              Билеты на Афише 🡥
             </a>
             <a href="https://kassir.ru/artists/chipachip" target="_blank" rel="noopener noreferrer" className="platform-btn">
-              Билеты на Кассир →
+              Билеты на Кассир 🡥
             </a>
           </div>
         </div>
